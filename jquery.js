@@ -13,8 +13,6 @@ var settings = {
            };
 
 
-
-
 //create basic layout of seats.
 var init = function (reservedSeat) {
                 var str = [], seatNo, className;
@@ -65,7 +63,6 @@ else{
 //     alert(str.join(','));
 // })
  
-
 
 
 $('#btnShowNew').on('click', function () {
