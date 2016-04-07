@@ -7,12 +7,29 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="container">
+
+
 <h2> Choose seats by clicking the corresponding seat in the layout below:</h2>
-    <div id="holder"> 
+
+<form class="form-inline">
+  <div class="form-group">
+    <label class="name" for="fname">Name</label>
+    <input type="name" class="form-control" id="fname" placeholder="First">
+  </div>
+  <div class="form-group">
+    <label class="lname" for="lname"></label>
+    <input type="name" class="form-control" id="lname" placeholder="Last">
+  </div>
+  <div class="checkbox">
+
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+    <div id="holder">
         <ul  id="place">
-        </ul>    
+        </ul>
     </div>
-    <div style="float:left;"> 
+    <div style="float:left;">
     <ul id="seatDescription">
         <li>Available Seat<img src="img/seat.png" width="50px" height="50px"></li>
         <li>Booked Seat<img src="img/booked.png" width="51px" height="51px"></li>
@@ -21,7 +38,7 @@
     </div>
         <div style="clear:both;width:100%">
         <input type="button" id="btnShowNew" value="Show Selected Seats" />
-        <input type="button" id="btnShow" value="Show All" />           
+        <input type="button" id="btnShow" value="Show All" />
         </div>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
