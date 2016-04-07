@@ -45,8 +45,7 @@ var init = function (reservedSeat) {
 
 //When user clicks on available seat, it is selected and 
 //second click on same seat will unselect seat. Button “Show All” will show all booked seat numbers and “Show Selected Seats” will show selected seats only.
-var $inputFname = $('#fname').val();
-var $inputLname = $('#lname').val();
+
 
 
 $('.' + settings.seatCss).on('click', function () {
@@ -58,13 +57,13 @@ else{
     }
 });
  
-$('#btnShow').on('click', function () {
-    var str = [];
-    $.each($('#place li.' + settings.selectedSeatCss + ' a, #place li.'+ settings.selectingSeatCss + ' a'), function (index, value) {
-        str.push($(this).attr('title'));
-    });
-    alert(str.join(','));
-})
+// $('#btnShow').on('click', function () {
+//     var str = [];
+//     $.each($('#place li.' + settings.selectedSeatCss + ' a, #place li.'+ settings.selectingSeatCss + ' a'), function (index, value) {
+//         str.push($(this).attr('title'));
+//     });
+//     alert(str.join(','));
+// })
  
 
 
@@ -76,17 +75,20 @@ $('#btnShowNew').on('click', function () {
         str.push(item); 
 
     });
-    alert(str.join(',')) + $inputFname;
+    var $inputFname = $('#fname').val();
+    var $inputLname = $('#lname').val();
+    alert(str.join(',') + $inputFname);
+    // console.log($inputFname);
     
 });
 
 //Console.logs fname THIS IS A TEST 
-$('#btnShowNew').on('click', function () {
- var $inputFname = $('#fname').val();
- var $inputLname = $('#lname').val();
-    console.log($inputFname, $inputLname);
+// $('#btnShowNew').on('click', function () {
+//  var $inputFname = $('#fname').val();
+//  var $inputLname = $('#lname').val();
+//     console.log($inputFname, $inputLname);
 
-});
+// });
 
 
 
