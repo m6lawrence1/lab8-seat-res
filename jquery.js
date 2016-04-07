@@ -9,7 +9,7 @@ var settings = {
                seatHeight: 35,                    // seatHeight: height of seat.
                seatCss: 'seat',                   //seatCss: css class of seat.
                selectedSeatCss: 'selectedSeat',   //selectedSeatCss: css class of already booked seats.
-               selectingSeatCss: 'selectingSeat'  //selectingSeatCss: css class of selected seats.
+               selectingSeatCss: 'selectingSeat'  //selectingSeatCss: css class of selected seats    
            };
 
 
@@ -43,8 +43,10 @@ var init = function (reservedSeat) {
 //seats array will be passed as argument of this method.
 
 
+//When user clicks on available seat, it is selected and 
+//second click on same seat will unselect seat. Button “Show All” will show all booked seat numbers and “Show Selected Seats” will show selected seats only.
 
-$('.' + settings.seatCss).click(function () {
+$('.' + settings.seatCss).on('click', function () {
 if ($(this).hasClass(settings.selectedSeatCss)){
     alert('This seat is already reserved');
 }
@@ -53,7 +55,7 @@ else{
     }
 });
  
-$('#btnShow').click(function () {
+$('#btnShow').on('click', function () {
     var str = [];
     $.each($('#place li.' + settings.selectedSeatCss + ' a, #place li.'+ settings.selectingSeatCss + ' a'), function (index, value) {
         str.push($(this).attr('title'));
@@ -61,17 +63,33 @@ $('#btnShow').click(function () {
     alert(str.join(','));
 })
  
-$('#btnShowNew').click(function () {
+
+
+
+$('#btnShowNew').on('click', function () {
     var str = [], item;
-    $.each($('#place li.' + settings.selectingSeatCss + ' a'), function (index, value) {
+    var seatNo = $.each($('#place li.' + settings.selectingSeatCss + ' a'), function (index, value) {
         item = $(this).attr('title');                   
-        str.push(item);                   
+        str.push(item); 
+
     });
     alert(str.join(','));
-})
+    
+});
 
-//When user clicks on available seat, it is selected and 
-//second click on same seat will unselect seat. Button “Show All” will show all booked seat numbers and “Show Selected Seats” will show selected seats only.
+//Console.logs fname THIS IS A TEST 
+$('#btnShowNew').on('click', function () {
+ var $fname = $('input:text');
+ var $lname = $('input:text');
+ var $inputFname = $fname.val();
+ var $inputLname = $lname.val();
+    console.log($inputFname, $inputLname);
+
+});
+
+
+
+
 
 
 
