@@ -1,8 +1,23 @@
+@font-face {
+  font-family: 'Game of Thrones';
+  src: url("fonts/Game of Thrones.ttf");
+}
+h1 {
+  font-family: Game of Thrones;
+  color: #fff;
+}
+p {
+  color: #fff;
+}
+body {
+  background-image: url("img/game-of-thrones-background.jpg");
+}
 #holder {
   height: 200px;
   width: 550px;
-  background-color: #f5f5f5;
-  border: 1px solid #a4a4a4;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  border: 2px solid #a4a4a4;
   margin: 0 auto;
 }
 #place {
@@ -16,15 +31,14 @@
   list-style: none outside none;
   position: absolute;
 }
-#place li:hover {
+#place li hover {
   background-color: #ff0;
 }
 #place .seat {
   background-image: url("img/seat.png");
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: right;
-  no-repeat: scroll 0 0 transparent;
+  background-position: right no-repeat scroll 0 0 transparent;
   height: 33px;
   width: 33px;
   display: block;
@@ -47,16 +61,20 @@
   margin-top: 10px;
 }
 #seatDescription li {
-/*verticle-align: middle;*/
+/*verticle-align  middle */
   list-style: none outside none;
   padding-left: 35px;
   height: 100px;
   width: 150px;
-  float: left;
+  display: inline;
+  float: center;
+  color: #fff;
+}
+#key {
+  padding: 20px;
+  width: 100%;
 }
 img {
-/*  height: 50px;
-  width: 50px;*/
   margin: 5px;
 }
 form {
@@ -69,11 +87,5 @@ form {
 }
 .container {
   text-align: center;
-}
-.key {
-  text-align: center;
-  display: inline;
-  margin: 0 auto;
-  width: 100%;
-  background-color: #f00;
+color
 }
