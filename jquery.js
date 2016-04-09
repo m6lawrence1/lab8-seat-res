@@ -66,7 +66,7 @@ $('#btnShowNew').on('click', function () {
     var $inputFname = $('#fname').val();
     var $inputLname = $('#lname').val();
     if ($inputFname.length===0){
-      alert('Please fill in your First Name');
+      alert('First Name of Die!');
     }
     else if ($inputLname.length===0){
       alert("Please Fill in Your Last Name");
