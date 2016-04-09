@@ -65,6 +65,8 @@ $('#btnShowNew').on('click', function () {
     });
     var $inputFname = $('#fname').val();
     var $inputLname = $('#lname').val();
+    
+    //If statements for alert
     if ($inputFname.length===0){
       alert('Please fill in your First Name');
     }
