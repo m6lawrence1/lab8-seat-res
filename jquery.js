@@ -65,7 +65,7 @@ $('#btnShowNew').on('click', function () {
     });
     var $inputFname = $('#fname').val();
     var $inputLname = $('#lname').val();
-    
+
     //If statements for alert
     if ($inputFname.length===0){
       alert('First Name or Die!');
@@ -77,6 +77,6 @@ $('#btnShowNew').on('click', function () {
       alert("Please Select Your Seat(s)");
     }
     else {
-    alert('Thank you ' + $inputFname + " " + $inputLname + ' you have researved seat(s) ' + str.join(', '));
+    alert('Thank you ' + $inputFname + " " + $inputLname + ' you have researved seat(s) ' + str.join(', ') + '!');
     };
 });
