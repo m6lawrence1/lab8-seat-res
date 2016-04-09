@@ -12,7 +12,7 @@ var settings = {
                selectingSeatCss: 'selectingSeat'  //selectingSeatCss: css class of selected seats
            };
 
-
+// test comment
 //create basic layout of seats.
 var init = function (reservedSeat) {
                 var str = [], seatNo, className;
@@ -65,7 +65,7 @@ $('#btnShowNew').on('click', function () {
     });
     var $inputFname = $('#fname').val();
     var $inputLname = $('#lname').val();
-    
+
     //If statements for alert
     if ($inputFname.length===0){
       alert('First Name or Die!');
