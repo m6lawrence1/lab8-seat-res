@@ -68,10 +68,10 @@ $('#btnShowNew').on('click', function () {
     
     //If statements for alert
     if ($inputFname.length===0){
-      alert('First Name of Die!');
+      alert('First Name or Die!');
     }
     else if ($inputLname.length===0){
-      alert("Please Fill in Your Last Name");
+      alert("Last Name or Die");
     }
     else if (seatNo.length===0){
       alert("Please Select Your Seat(s)");
