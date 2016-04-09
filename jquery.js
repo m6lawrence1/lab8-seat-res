@@ -9,7 +9,7 @@ var settings = {
                seatHeight: 55,                    // seatHeight: height of seat.
                seatCss: 'seat',                   //seatCss: css class of seat.
                selectedSeatCss: 'selectedSeat',   //selectedSeatCss: css class of already booked seats.
-               selectingSeatCss: 'selectingSeat'  //selectingSeatCss: css class of selected seats    
+               selectingSeatCss: 'selectingSeat'  //selectingSeatCss: css class of selected seats
            };
 
 
@@ -33,15 +33,15 @@ var init = function (reservedSeat) {
             };
             //case I: Show from starting
             //init();
- 
+
             //Case II: If already booked
             var bookedSeats = [5, 10, 25];
             init(bookedSeats);
-//init method is used to draw seats layout. Already booked 
+//init method is used to draw seats layout. Already booked
 //seats array will be passed as argument of this method.
 
 
-//When user clicks on available seat, it is selected and 
+//When user clicks on available seat, it is selected and
 //second click on same seat will unselect seat. Button “Show All” will show all booked seat numbers and “Show Selected Seats” will show selected seats only.
 
 $('.' + settings.seatCss).on('click', function () {
@@ -52,15 +52,15 @@ else{
     $(this).toggleClass(settings.selectingSeatCss);
     }
 });
- 
+
 
 
 $('#btnShowNew').on('click', function () {
 
     var str = [], item;
     var seatNo = $.each($('#place li.' + settings.selectingSeatCss + ' a'), function (index, value) {
-        item = $(this).attr('title');                   
-        str.push(item); 
+        item = $(this).attr('title');
+        str.push(item);
 
     });
     var $inputFname = $('#fname').val();
@@ -80,19 +80,4 @@ $('#btnShowNew').on('click', function () {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// testing, testing. Branch example. -shelby
