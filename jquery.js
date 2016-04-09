@@ -5,8 +5,8 @@ var settings = {
                cols: 15,                          // cols: total number of seats in each row.
                rowCssPrefix: 'row-',              // rowCssPrefix: will be used to customize row layout using (rowCssPrefix + row number) css class.
                colCssPrefix: 'col-',              // colCssPrefix: will be used to customize column using (colCssPrefix + column number) css class.
-               seatWidth: 35,                     // seatWidth: width of seat.
-               seatHeight: 35,                    // seatHeight: height of seat.
+               seatWidth: 55,                     // seatWidth: width of seat.
+               seatHeight: 55,                    // seatHeight: height of seat.
                seatCss: 'seat',                   //seatCss: css class of seat.
                selectedSeatCss: 'selectedSeat',   //selectedSeatCss: css class of already booked seats.
                selectingSeatCss: 'selectingSeat'  //selectingSeatCss: css class of selected seats    
@@ -74,7 +74,7 @@ $('#btnShowNew').on('click', function () {
     });
     var $inputFname = $('#fname').val();
     var $inputLname = $('#lname').val();
-    alert(str.join(',') + $inputFname);
+    alert('Thank you ' + $inputFname + " " + $inputLname + ' you have researved seat(s) ' + str.join(', '));
     // console.log($inputFname);
     
 });

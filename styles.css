@@ -13,8 +13,8 @@ body {
   background-image: url("img/game-of-thrones-background.jpg");
 }
 #holder {
-  height: 200px;
-  width: 550px;
+  height: 350px;
+  width: 850px;
   border-radius: 5px;
   background-color: #2c2c2c;
   border: 2px solid #a4a4a4;
@@ -22,10 +22,14 @@ body {
 }
 #place {
   position: relative;
-  margin: 7px;
+  margin: 20px;
 }
 #place a {
-  font-size: 0.6em;
+  font-size: 10px;
+  padding: 7px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  text-align: right;
 }
 #place li {
   list-style: none outside none;
@@ -37,29 +41,29 @@ body {
 }
 #place .seat {
   background-image: url("img/seat.png");
-  background-size: 20px;
+  background-size: 35px;
   background-repeat: no-repeat;
-  background-position: right no-repeat scroll 0 0 transparent;
-  height: 33px;
-  width: 33px;
+  background-position: 0% 100% no-repeat scroll 0 0 transparent;
+  height: 55px;
+  width: 50px;
   display: block;
 }
 /*Booked Seats */
 #place .selectedSeat {
   background-image: url("img/booked.png");
   background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: right;
+  background-size: 45px;
+  background-position: left;
 }
 #place .selectingSeat {
   background-image: url("img/got.png");
   background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: right;
+  background-size: 40px;
+  background-position: top left;
 }
 #place .row-3,
 #place .row-4 {
-  margin-top: 10px;
+  margin-top: 40px;
 }
 #seatDescription li {
 /*verticle-align  middle */
@@ -75,6 +79,9 @@ body {
   padding: 20px;
   width: 100%;
 }
+ul {
+  padding: 10px;
+}
 img {
   margin: 5px;
 }
@@ -85,6 +92,10 @@ form {
   display: block;
   text-align: center;
   padding: 10px;
+}
+label {
+  color: #fff;
+  margin-right: 10px;
 }
 .container {
   text-align: center;
